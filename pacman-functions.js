@@ -19,3 +19,15 @@ const eatDot3 = () => {
 eatDot1();
 eatDot2();
 eatDot3();
+
+
+
+const highScores = []; //This is a const, but since it is an array we can add values to it.
+function addHighScore(highScoreList, playerInitials, score) {
+    const record = { player: playerInitials, score: score };
+    highScoreList.push(record); //Add record to array.
+}
+
+addHighScore(highScores, 'SDL', 2000);
+addHighScore(highScores, 'JSL', 10000);
+console.log(highScores);
